@@ -5,12 +5,12 @@
 class Vpd < Formula
   desc "Vojtech Pastyrik Utils"
   homepage "https://github.com/VojtechPastyrik/vpd"
-  version "1.10.0"
+  version "1.11.0"
   license "MIT"
 
   on_macos do
-    url "https://github.com/VojtechPastyrik/vpd/releases/download/v1.10.0/vpd_1.10.0_darwin_all.tar.gz"
-    sha256 "64390b2f35ac99785f1a82fe550a296819b630b41b6b94c1f295ec6b1eef1f0c"
+    url "https://github.com/vojtechpastyrik/vpd/releases/download/v1.11.0/vpd_1.11.0_darwin_all.tar.gz"
+    sha256 "b16c21ce017cd03cba27612eaa03ae6edb18abc7387ea9a5c9c266684eb07cd6"
 
     define_method(:install) do
       bin.install "vpd"
@@ -19,15 +19,15 @@ class Vpd < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/VojtechPastyrik/vpd/releases/download/v1.10.0/vpd_1.10.0_linux_amd64.tar.gz"
-      sha256 "461854e76a71e375af19b217334ab62408e5a14d66ae6913c2653d211546dedf"
+      url "https://github.com/vojtechpastyrik/vpd/releases/download/v1.11.0/vpd_1.11.0_linux_amd64.tar.gz"
+      sha256 "c108d0882f31f0b45c8a102c61f901ed199f9946c4e506f9d7e3516035cd23ee"
       define_method(:install) do
         bin.install "vpd"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/VojtechPastyrik/vpd/releases/download/v1.10.0/vpd_1.10.0_linux_arm64.tar.gz"
-      sha256 "46303cac88650dd8bef65148bb6c7770b53ad0c0d5e44580a812cbc905cbf229"
+      url "https://github.com/vojtechpastyrik/vpd/releases/download/v1.11.0/vpd_1.11.0_linux_arm64.tar.gz"
+      sha256 "de74b62d19692a5b71a739fecf1a8b9d1c7744c1be4765783ecacc21ba91fefe"
       define_method(:install) do
         bin.install "vpd"
       end
